@@ -1,0 +1,16 @@
+
+<html>
+<center>
+<h1>Welcome to Instagram!<h1>
+<p>
+  <%=Time.now.strftime('%H:%M')%>
+  <br>
+  <%=Time.now.strftime('%d:%m:%Y')%>
+</p>
+<br>
+<%= link_to 'Login', new_user_session_path, :class => 'nav-link'%>
+<%= link_to 'Sign Up', new_user_registration_path, :class => 'nav-link'%>
+
+</center>
+
+</html>
